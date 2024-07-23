@@ -18,8 +18,6 @@
 // Next is a 2 track 'ptttl' with tracks separated by |
 #define RTTTL_SUPER_MARIO_BROS_POLY "smb:d=4,o=5,b=180:8e6,8e6,8p,8e6,8p,8c6,e6,g6,p,g,p,c6,8p,g,8p,e,8p,a,b,8a#,a,8g.,8e6,8g6,a6,8f6,8g6,8p,e6,8c6,8d6,b,8p,c6,8p,g,8p,e,8p,a,b,8a#,a,8g.,8e6,8g6,a6,8f6,8g6,8p,e6,8c6,8d6,b,8p,p,8g6,8f#6,8f6,d#6,8e6,8p,8g#,8a,8c6,8p,8a,8c6,8d6,p,8g6,8f#6,8f6,d#6,8e6,8p,c7,8c7,c7,p,p,8g6,8f#6,8f6,d#6,8e6,8p,8g#,8a,8c6,8p,8a,8c6,8d6,p,d#6,8p,d6,8p,c6,p,2p|8d4,8d4,8p,8d4,8p,8d4,d4,g4,p,g3,p,g4,8p,e4,8p,c4,8p,f4,g4,8f#4,f4,8e4.,8c,8e,f,8d,8e,8p,c,8a4,8b4,g4,8p,g4,8p,e4,8p,c4,8p,f4,g4,8f#4,f4,8e4.,8c,8e,f,8d,8e,8p,c,8a4,8b4,g4,8p,c4,8p,8g4,p,c,f4,8p,8c,c,f4,c4,8p,8g4,p,8g4,8c,2p,p,g4,c4,8p,8g4,p,c,f4,8p,8c,c,f4,c4,g#4,8p,a#4,8p,c,8p,8g4,g4,c4"
 
-#endif
-
 #if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168__)
 #define MAX_RTTL_LENGTH 650
 #define MAX_TONES_PER_TRACK 125
@@ -171,3 +169,5 @@ Song *parseRTTL(const char *rtttl)
   }
   return song;
 }
+
+#endif // _RTTTL_H
